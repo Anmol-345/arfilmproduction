@@ -71,6 +71,28 @@ export function Header() {
                 About
               </Link>
             </li>
+                        <li>
+              <Link
+                href="/testimonials"
+                className={cn(
+                  "transition-colors hover:text-primary",
+                  pathname === "/testimonials" ? "text-primary" : "text-foreground",
+                )}
+              >
+                Testimonials
+              </Link>
+            </li>
+                        <li>
+              <Link
+                href="/contacts"
+                className={cn(
+                  "transition-colors hover:text-primary",
+                  pathname === "/contacts" ? "text-primary" : "text-foreground",
+                )}
+              >
+                Contacts
+              </Link>
+            </li>
           </ul>
 
           <button

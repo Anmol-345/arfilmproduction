@@ -21,7 +21,7 @@ export default function AboutPage() {
               <li>Training programes</li>
               <li>Photo video shoots</li>
               <li>Portfolio shoots</li>
-              <li>Webbseries shoot</li>
+              <li>Webseries shoot</li>
               <li>Wedding and Pre-wedding shoots</li>
               <li>Maternity and Birthday shoots</li>
               <li>E-commerce shoots</li>
