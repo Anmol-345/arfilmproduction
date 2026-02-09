@@ -164,6 +164,28 @@ export function Header() {
                   About
                 </Link>
               </li>
+                                      <li>
+              <Link
+                href="/testimonials"
+                className={cn(
+                  "block px-4 py-2 rounded-lg transition-colors hover:bg-primary/10",
+                  pathname === "/testimonials" ? "text-primary" : "text-foreground",
+                )}
+              >
+                Testimonials
+              </Link>
+            </li>
+                        <li>
+              <Link
+                href="/contacts"
+                className={cn(
+                  "block px-4 py-2 rounded-lg transition-colors hover:bg-primary/10",
+                  pathname === "/contacts" ? "text-primary" : "text-foreground",
+                )}
+              >
+                Contacts
+              </Link>
+            </li>
             </ul>
           </motion.div>
         )}
