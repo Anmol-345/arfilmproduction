@@ -17,7 +17,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "arfilmproduction — Event & Wedding Films",
   description: "Cinematic events and timeless stories by arfilmproduction.",
-  generator: "v0.app",
+  verification: {
+    google: "UrqQlbrKgPXsxDjV-0cleR7W7eoSW7J9v1pmY6iHSQU",
+  },
 }
 
 export default function RootLayout({
