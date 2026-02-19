@@ -34,52 +34,49 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <main>
-        {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="mx-auto max-w-4xl text-center">
+      <main className="flex flex-col min-h-[calc(100vh-80px)]">
+        {/* Full Page Content */}
+        <div className="flex-1 flex flex-col items-center justify-center px-4 py-8">
+          <div className="w-full max-w-4xl">
+            {/* Hero Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              className="text-center mb-8"
             >
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
+              <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-balance">
                 Get in <span className="text-primary">Touch</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
-                Ready to make your event unforgettable? Reach out to us and let's discuss your vision for the perfect celebration.
+              <p className="text-sm md:text-base text-muted-foreground text-pretty">
+                Ready to make your event unforgettable? Reach out to us today.
               </p>
             </motion.div>
-          </div>
-        </section>
 
-        {/* Contact Info Section */}
-        <section className="px-4 py-16 md:py-24 bg-muted/30">
-          <div className="mx-auto max-w-4xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Contact Info Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
               {contactInfo.map((info, index) => {
                 const Icon = info.icon
                 return (
                   <motion.div
                     key={info.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="text-center"
+                    className="text-center p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
                   >
-                    <div className="flex justify-center mb-4">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-primary" />
+                    <div className="flex justify-center mb-2">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-primary" />
                       </div>
                     </div>
-                    <h3 className="font-semibold text-lg mb-2">{info.label}</h3>
+                    <h3 className="font-semibold text-sm mb-1">{info.label}</h3>
                     {info.label === 'Location' ? (
-                      <p className="text-muted-foreground">{info.value}</p>
+                      <p className="text-xs text-muted-foreground">{info.value}</p>
                     ) : (
                       <a
                         href={info.href}
-                        className="text-primary hover:underline transition-colors"
+                        className="text-primary hover:underline transition-colors text-xs"
                       >
                         {info.value}
                       </a>
@@ -88,38 +85,32 @@ export default function ContactPage() {
                 )
               })}
             </div>
-          </div>
-        </section>
 
-        {/* WhatsApp CTA Section */}
-        <section className="px-4 py-16 md:py-24">
-          <div className="mx-auto max-w-2xl text-center">
+            {/* WhatsApp CTA */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              className="text-center"
             >
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-                Quick Chat on WhatsApp
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-3">
+                Chat on WhatsApp
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Have questions? Start a quick conversation with us on WhatsApp and get instant responses.
+              <p className="text-sm text-muted-foreground mb-4">
+                Have questions? Start a quick conversation with us.
               </p>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA58] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BA58] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-4 h-4" />
                 Chat on WhatsApp
               </a>
             </motion.div>
           </div>
-        </section>
-
-
+        </div>
       </main>
       <Footer />
     </>

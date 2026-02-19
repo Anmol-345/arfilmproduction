@@ -1,5 +1,7 @@
 import { Header } from "@/components/site/header"
 import { Footer } from "@/components/site/footer"
+import Image from "next/image"
+
 
 export default function AboutPage() {
   return (
@@ -39,6 +41,39 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
+        {/* Founder Section */}
+        <section className="mt-16 md:mt-24 border-t border-border pt-12">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Meet Our Founder</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative">
+              <Image
+                src="/media/founder.jpg"
+                alt="Founder of arfilmproduction"
+                width={400}
+                height={500}
+                className="rounded-lg object-cover w-full"
+              />
+            </div>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-serif text-2xl font-bold text-primary">Tariq Anwar</h3>
+                <p className="text-muted-foreground">Business development manager</p>
+              </div>
+              <p className="leading-relaxed">
+                A highly driven business leader with over 8 years of experience in the Wedding,
+                Brands, Advertisement, Decor, and Event Management industry. Achieved significant
+                success by establishing AR FILM PRODUCTION, one of Delhi's fastestgrowing
+                production houses, and securing over 300 highticket client deals across weddings,
+                brand shoots, event management, and commercial advertising.
+              </p>
+              <p className="leading-relaxed">
+                Developed a premier AR film production brand in Delhi, Transforming It from an
+                Initial concept into a market leader. Successfully executed projects for over 300+
+                clients across weddings, fashion, and branding.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
