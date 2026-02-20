@@ -57,7 +57,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-serif text-2xl font-bold text-primary">Sheikh Anwar</h3>
-                <p className="text-muted-foreground">Business development manager</p>
+                {/* <p className="text-muted-foreground">Business development manager</p> */}
               </div>
               <p className="leading-relaxed">
 A driven business leader with over eight years of experience in the wedding, branding, advertising, décor, and event management industries. Founded AR Film Production, now one of Delhi’s fastest-growing production houses, securing over 300 high-ticket client projects across weddings, brand shoots, event management, and commercial advertising.
