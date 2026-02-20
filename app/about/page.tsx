@@ -60,16 +60,10 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">Business development manager</p>
               </div>
               <p className="leading-relaxed">
-                A highly driven business leader with over 8 years of experience in the Wedding,
-                Brands, Advertisement, Decor, and Event Management industry. Achieved significant
-                success by establishing AR FILM PRODUCTION, one of Delhi's fastestgrowing
-                production houses, and securing over 300 highticket client deals across weddings,
-                brand shoots, event management, and commercial advertising.
+A driven business leader with over eight years of experience in the wedding, branding, advertising, décor, and event management industries. Founded AR Film Production, now one of Delhi’s fastest-growing production houses, securing over 300 high-ticket client projects across weddings, brand shoots, event management, and commercial advertising.
               </p>
               <p className="leading-relaxed">
-                Developed a premier AR film production brand in Delhi, Transforming It from an
-                Initial concept into a market leader. Successfully executed projects for over 300+
-                clients across weddings, fashion, and branding.
+Built AR Film Production into a premier brand in Delhi, transforming it from an initial concept into a recognized industry name. Successfully delivered projects for over 300 clients across weddings, fashion, and brand campaigns.
               </p>
             </div>
           </div>
