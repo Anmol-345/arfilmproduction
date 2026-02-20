@@ -56,7 +56,7 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               <div>
-                <h3 className="font-serif text-2xl font-bold text-primary">Tariq Anwar</h3>
+                <h3 className="font-serif text-2xl font-bold text-primary">Sheikh Anwar</h3>
                 <p className="text-muted-foreground">Business development manager</p>
               </div>
               <p className="leading-relaxed">
