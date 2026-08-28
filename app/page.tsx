@@ -3,7 +3,6 @@ import { Hero } from "@/components/site/hero"
 import { EventsGallery } from "@/components/site/events-gallery"
 import { Footer } from "@/components/site/footer"
 
-//hi
 
 export default function HomePage() {
   return (
